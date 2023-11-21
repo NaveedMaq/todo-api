@@ -7,9 +7,19 @@ POST http://localhost:3200/tasks
 Content-Type: application/json
 
 {
-  "title": "Buy stuff",
+  "title": "Go to gym",
   "date": "2023-01-01T12:00:00Z",
-  "description": "Toothpaste, toothbrush and apples",
+  "description": "Go to gym at 7pm",
   "priority": "normal",
   "status": "todo"
+}
+
+
+### Update a task
+PUT http://localhost:3200/tasks
+Content-Type: application/json
+
+{
+ "id": "adc3e2b8-f636-453a-87d4-3f4be4bdf652",
+ "status": "completed"
 }
